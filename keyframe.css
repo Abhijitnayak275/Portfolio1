@@ -85,10 +85,10 @@
 @keyframes words {
     0%,
     50%{
-        content:'Frontend Developer';
+        content:'Developer';
     }51%,
     100%{
-        content:'Web Designer';
+        content:'Designer';
     }  
 }
 
