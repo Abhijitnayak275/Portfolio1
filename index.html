@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfollio</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./keyframe.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Abhijit Nayak</div>
+
+              <i class="bi bi-list" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active" style="--i:1">Home</a>
+            <a href="#about" class="active" style="--i:2">About Me</a>
+            <a href="#projects" class="active" style="--i:3">Projects</a>
+            <a href="#contact" class="active" style="--i:4">Contact</a> 
+        </nav>
+    </header>
+
+     <section class="home" id="home">
+        <div class="home-img">
+            <img src="./assets/portfolio_profile-transformed.jpeg" alt="Profile-Picture">
+        </div>
+        <div class="home-content">
+            <h3>Hii</h3>
+            <h1>It's <span>Abhijit Nayak</span></h1>
+            <h3 class="text-animation"> I'm a <span></span></h3>
+            <p style="font-weight: bold;">A Passionate Frontend Devloper🚀 Having an exprience of bulding web application and mobile application with HTML / CSS / Bootstrap / JavaScript / React and some other cool libraries and frameworks, and I’m always eager to learn more.</p>
+
+            <div class="social-icons">
+                <a href="#" style="--i:7"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/abhijit-nayak-26bba71b8/" style="--i:8"><i class="bi bi-linkedin"></i></a>
+                <a href="#" style="--i:9"><i class="bi bi-github"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>   
+        </div>
+    </section>
+               <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3 class="text-animation"><span></span></h3>
+            <p>
+               Hey there! I’m Abhijit Nayak, a passionate frontend developer based in Bhubaneswar, Odisha, India. My journey in web development began with curiosity and a love for creating beautiful, user-friendly interfaces. 🚀
+                
+                What I Do:
+ 
+                Frontend Magic: I specialize in turning design concepts into pixel-perfect, responsive web experiences. Whether it’s HTML, CSS, or JavaScript, I thrive on bringing ideas to life.
+                User-Centric Design: I believe that great design is not just about aesthetics; it’s about enhancing usability and making users’ lives easier.
+                Continuous Learning: The tech world evolves rapidly, and I’m always hungry to learn new frameworks, libraries, and best practices.<span id="dots">......</span>
+                <p class="read-more" id="more" style="display: none;">
+                    Why I Love This Gig:
+                
+                    The Creative Puzzle: Crafting intuitive interfaces feels like solving a puzzle. Each line of code contributes to the bigger picture.
+                    Collaboration: I enjoy collaborating with designers, backend developers, and other creative minds. Teamwork makes the dream work!
+                    Impact: Knowing that my work directly impacts users motivates me every day.
+
+                    When I’m Not Coding:
+                    
+                    Cricket Enthusiast: Off the screen, you’ll find me practicing Cricket.
+                </p>
+                                
+            </p>
+            <span class="btn" id="btn" onclick="readMore()">Read More</span>
+        </div>
+        <div class="about-img">
+            <img src="./assets/about.jpg">
+        </div>
+    </section>
+                   <!-- Project Section -->
+
+<section class="projects" id="projects">
+
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container"> 
+            <div class="projects-box">
+                <img src="./assets/m1000rr 1.jpg">
+                <div class="projects-info">
+                    <h2>Image Slider</h2>
+                    <p>Introducing my bike image gallery! 🚲 From sleek road bikes to rugged mountain rides, this gallery showcases the artistry of two wheels. Dive in and explore the seamless transitions, captivating hover effects, and innovative animations that bring these bikes to life. Pedal on!” 📸</p>
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+
+              <div class="projects-box">
+                <img src="./assets/Calculator.png">
+                <div class="projects-info">
+                    <h2>Caclculator</h2>
+                    <p>Crunching numbers like a pro! 🧮 Your “Sum It Up” calculator project is more than just math—it’s about efficiency, precision, and problem-solving. Whether you’re adding up grocery bills or calculating complex equations</p>
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="./assets/M 1000 RR.png">
+                <div class="projects-info">
+                    <h2>M1000 RR Landing Page</h2>
+                    <p>🏍️ Unleashing the Ultimate Superbike: The BMW M1000 RR.
+                     <p>
+                        The BMW M1000 RR is not just a motorcycle; it’s an adrenaline-fueled symphony of speed, precision, and engineering excellence.
+                     </p>   
+                    </p>
+                    <a href=""><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+
+ 
+        </div>
+    </section>
+
+<!-- Contact section -->
+
+     <section class="contact" id="contact">
+        <h2 class="heading">Conatct <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Enter Your Gmail">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="email" placeholder="subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" class="btn" value="Send Message">
+        </form>
+    </section>
+                    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bi bi-github"></i></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-meta"></i></a>
+
+        </div>
+        <ul class="list">
+            <li><a href="#home">FAQ</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Privecy  Policy</a></li>
+        </ul> 
+        <p class="copyright">
+            &copy; Abhijit Nayak | All Rights Reserved
+        </p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

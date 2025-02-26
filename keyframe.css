@@ -1,0 +1,233 @@
+@keyframes slideTop {
+    0% {
+        transform: translateY(150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-220px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(150px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes appear {
+    0%{
+        transform: translateX(150px);
+        filter: blur(10px);
+        opacity: 1;
+        /* opacity: 0;
+        scale: 0.5; */
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 0;
+        /* opacity: 1;
+        scale: 1; */
+    }
+}
+
+@keyframes appear2{
+
+    0%{
+        transform: translateX(-150px);
+        filter: blur(10px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+
+/* @keyframes cursor {
+    to{
+        border-left: 2px solid black;
+       
+    }
+    
+}  */
+@keyframes words {
+    0%,
+    50%{
+        content:'Frontend Developer';
+    }51%,
+    100%{
+        content:'Web Designer';
+    }  
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(min-width:1285px){
+    html{
+    font-size: 55%;
+    }
+    .projects-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2.1fr);
+        margin: 0 5rem;
+    }
+    .home p{
+        width: 700px ;
+    }
+    .home img{
+        width: 28vw;
+    }
+    .home{
+        margin-top: -40px;
+    }
+}
+@media(max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    /* .home-content{
+        padding: 200px;
+    } */
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media(max-width:895px){
+    #menu-icon{
+        display: block;
+    }
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: white;
+    border-bottom: 1px solid rgba(255, 255, 255,0.4);
+    display: none;
+}
+.navbar.active{
+    display: block;
+    
+}
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: black;
+   
+}
+.home{
+    flex-direction: column;
+    margin: 5rem 4rem;
+    margin-top: -90px;
+    margin-left: 60px;
+}
+.home p{
+    width: 400px;
+    margin-left: -20px;
+}
+.home-content h3{
+    font-size: 2.6rem;
+}
+.home-content h1{
+    font-size: 5rem;
+}
+.home-img img{
+    width: 70vw;
+    margin-top: 4rem;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+}
+.about{
+    flex-direction: column-reverse;
+}
+.about-content{
+    margin: 0 2rem 3rem;
+}
+.about img{
+    width: 64vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.projects h2{
+    margin-bottom: 3rem;
+}
+.projects-container{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+
+
+
